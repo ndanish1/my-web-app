@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using quiz4_demo2.Models;
 using System.Diagnostics;
 
-namespace quiz4_demo2.Controllers
+namespace quiz4_demo.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,6 +15,9 @@ namespace quiz4_demo2.Controllers
 
         public IActionResult Index()
         {
+            // Add the database access statement here
+            ViewData["DatabaseMessage"] = "Database access has already been done on April 14, 2023 by Naveed Danish";
+
             return View();
         }
 
